@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom right,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+}
+
+.slick-slide {
+  opacity: 0.5; /* Make non-active slides slightly transparent */
+}
+
+.slick-center {
+  opacity: 1; /* Make the active slide fully visible */
+  transform: scale(1.1); /* Scale up the active slide */
+}
